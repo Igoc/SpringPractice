@@ -25,7 +25,7 @@ public class MemberController {
 
     @GetMapping("/recommend/{id}")
     public List<MemberRecommendResponseDto> recommendMembers(@PathVariable String id) {
-        return memberService.recommendMember(id);
+        return memberService.recommendMembers(id);
     }
 
     @PutMapping("/update/{id}")

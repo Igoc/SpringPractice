@@ -46,7 +46,7 @@ public class MemberService {
                 .build();
     }
 
-    public List<MemberRecommendResponseDto> recommendMember(String id) {
+    public List<MemberRecommendResponseDto> recommendMembers(String id) {
         Member member = memberRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("존재하지 않는 아이디"));
 
